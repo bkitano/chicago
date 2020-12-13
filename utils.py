@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-
+import glob
 
 def getDefinedRows(df):
     rows_with_data = pd.notna(df['latitude']) & pd.notna(df['longitude']) & pd.notna(df['day']) & pd.notna(df['month']) & pd.notna(df['year'])
